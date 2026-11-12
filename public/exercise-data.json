@@ -1,0 +1,461 @@
+[
+    {
+        "exerciseId": 1,
+        "exerciseName": "Standard Push-Up",
+        "image": "https://images.pexels.com/photos/4162487/pexels-photo-4162487.jpeg",
+        "tags": [
+            "Chest",
+            "Arms"
+        ],
+        "equipment": "Bodyweight",
+        "description": "A fundamental upper-body exercise that builds chest, shoulder, and triceps strength.",
+        "difficulty": "Beginner",
+        "sets": 3,
+        "reps": "12-15",
+        "duration": "15 min",
+        "calories": "90 kcal",
+        "rating": 4.8,
+        "instructions": [
+            "Start in a high plank position with hands shoulder-width apart.",
+            "Keep your body straight from head to heels.",
+            "Lower your chest toward the floor by bending your elbows.",
+            "Push back up to the starting position."
+        ]
+    },
+    {
+        "exerciseId": 2,
+        "exerciseName": "Barbell Bench Press",
+        "image": "https://images.pexels.com/photos/4162487/pexels-photo-4162487.jpeg",
+        "tags": [
+            "Chest",
+            "Triceps"
+        ],
+        "equipment": "Barbell, Bench",
+        "description": "A compound strength exercise designed to develop chest mass and upper-body pressing power.",
+        "difficulty": "Intermediate",
+        "sets": 4,
+        "reps": "8-10",
+        "duration": "25 min",
+        "calories": "180 kcal",
+        "rating": 4.9,
+        "instructions": [
+            "Lie flat on a bench with your feet firmly planted.",
+            "Grip the bar slightly wider than shoulder-width.",
+            "Lower the bar toward your mid-chest.",
+            "Press the bar upward until your arms are extended."
+        ]
+    },
+    {
+        "exerciseId": 3,
+        "exerciseName": "Pull-Up",
+        "image": "https://images.pexels.com/photos/4162487/pexels-photo-4162487.jpeg",
+        "tags": [
+            "Back",
+            "Arms"
+        ],
+        "equipment": "Pull-Up Bar",
+        "description": "A challenging bodyweight exercise that develops back width, biceps, and grip strength.",
+        "difficulty": "Advanced",
+        "sets": 3,
+        "reps": "8-10",
+        "duration": "15 min",
+        "calories": "120 kcal",
+        "rating": 4.8,
+        "instructions": [
+            "Grip the pull-up bar slightly wider than shoulder-width.",
+            "Hang with your arms fully extended.",
+            "Pull your body upward until your chin passes the bar.",
+            "Lower yourself slowly to the starting position."
+        ]
+    },
+    {
+        "exerciseId": 4,
+        "exerciseName": "Barbell Back Squat",
+        "image": "https://images.pexels.com/photos/4162487/pexels-photo-4162487.jpeg",
+        "tags": [
+            "Legs",
+            "Glutes"
+        ],
+        "equipment": "Barbell, Squat Rack",
+        "description": "A powerful compound movement that strengthens the quadriceps, glutes, and lower body.",
+        "difficulty": "Intermediate",
+        "sets": 4,
+        "reps": "8-10",
+        "duration": "30 min",
+        "calories": "240 kcal",
+        "rating": 4.9,
+        "instructions": [
+            "Position the barbell across your upper back.",
+            "Stand with feet shoulder-width apart.",
+            "Bend your knees and hips to lower into a squat.",
+            "Push through your feet to return to standing."
+        ]
+    },
+    {
+        "exerciseId": 5,
+        "exerciseName": "Dumbbell Shoulder Press",
+        "image": "https://images.pexels.com/photos/4162487/pexels-photo-4162487.jpeg",
+        "tags": [
+            "Shoulders",
+            "Arms"
+        ],
+        "equipment": "Dumbbells",
+        "description": "An effective shoulder-building exercise that improves overhead strength and stability.",
+        "difficulty": "Intermediate",
+        "sets": 3,
+        "reps": "10-12",
+        "duration": "20 min",
+        "calories": "130 kcal",
+        "rating": 4.7,
+        "instructions": [
+            "Hold dumbbells at shoulder height.",
+            "Keep your core engaged and back straight.",
+            "Press both dumbbells overhead.",
+            "Lower the weights slowly to shoulder level."
+        ]
+    },
+    {
+        "exerciseId": 6,
+        "exerciseName": "Dumbbell Bicep Curl",
+        "image": "https://images.pexels.com/photos/4162487/pexels-photo-4162487.jpeg",
+        "tags": [
+            "Arms",
+            "Biceps"
+        ],
+        "equipment": "Dumbbells",
+        "description": "An isolation exercise that targets the biceps and improves arm strength and muscle definition.",
+        "difficulty": "Beginner",
+        "sets": 3,
+        "reps": "12-15",
+        "duration": "12 min",
+        "calories": "80 kcal",
+        "rating": 4.6,
+        "instructions": [
+            "Stand upright holding dumbbells at your sides.",
+            "Keep your elbows close to your body.",
+            "Curl the weights toward your shoulders.",
+            "Lower them slowly without swinging."
+        ]
+    },
+    {
+        "exerciseId": 7,
+        "exerciseName": "Plank Hold",
+        "image": "https://images.pexels.com/photos/4162487/pexels-photo-4162487.jpeg",
+        "tags": [
+            "Core",
+            "Abs"
+        ],
+        "equipment": "Exercise Mat",
+        "description": "An isometric core exercise that builds abdominal strength, stability, and endurance.",
+        "difficulty": "Beginner",
+        "sets": 3,
+        "reps": "30-60 sec",
+        "duration": "10 min",
+        "calories": "50 kcal",
+        "rating": 4.8,
+        "instructions": [
+            "Start with your forearms and toes on the floor.",
+            "Keep your elbows directly below your shoulders.",
+            "Maintain a straight line from head to heels.",
+            "Engage your core and hold the position."
+        ]
+    },
+    {
+        "exerciseId": 8,
+        "exerciseName": "Walking Lunges",
+        "image": "https://images.pexels.com/photos/4162487/pexels-photo-4162487.jpeg",
+        "tags": [
+            "Legs",
+            "Glutes"
+        ],
+        "equipment": "Bodyweight",
+        "description": "A dynamic lower-body exercise that develops leg strength, balance, and coordination.",
+        "difficulty": "Beginner",
+        "sets": 3,
+        "reps": "12-14",
+        "duration": "15 min",
+        "calories": "110 kcal",
+        "rating": 4.7,
+        "instructions": [
+            "Stand upright with your feet hip-width apart.",
+            "Step forward with one leg.",
+            "Lower your hips until both knees are bent.",
+            "Push through your front foot and step forward with the opposite leg."
+        ]
+    },
+    {
+        "exerciseId": 9,
+        "exerciseName": "Deadlift",
+        "image": "https://images.pexels.com/photos/4162487/pexels-photo-4162487.jpeg",
+        "tags": [
+            "Back",
+            "Legs"
+        ],
+        "equipment": "Barbell",
+        "description": "A full-body compound lift that develops posterior chain strength and overall power.",
+        "difficulty": "Advanced",
+        "sets": 4,
+        "reps": "6-8",
+        "duration": "25 min",
+        "calories": "220 kcal",
+        "rating": 4.9,
+        "instructions": [
+            "Stand with your feet hip-width apart and the bar over your mid-foot.",
+            "Bend your hips and grip the bar.",
+            "Keep your back neutral and chest lifted.",
+            "Drive through your feet and extend your hips to stand."
+        ]
+    },
+    {
+        "exerciseId": 10,
+        "exerciseName": "Dumbbell Lateral Raise",
+        "image": "https://images.pexels.com/photos/4162487/pexels-photo-4162487.jpeg",
+        "tags": [
+            "Shoulders"
+        ],
+        "equipment": "Dumbbells",
+        "description": "An isolation movement that targets the lateral deltoids and develops wider shoulders.",
+        "difficulty": "Beginner",
+        "sets": 3,
+        "reps": "12-15",
+        "duration": "12 min",
+        "calories": "70 kcal",
+        "rating": 4.5,
+        "instructions": [
+            "Stand holding dumbbells beside your thighs.",
+            "Keep a slight bend in your elbows.",
+            "Raise both arms outward to shoulder height.",
+            "Lower the dumbbells slowly."
+        ]
+    },
+    {
+        "exerciseId": 11,
+        "exerciseName": "Mountain Climbers",
+        "image": "https://images.pexels.com/photos/4162487/pexels-photo-4162487.jpeg",
+        "tags": [
+            "Core",
+            "Cardio"
+        ],
+        "equipment": "Bodyweight",
+        "description": "A high-intensity bodyweight movement that improves cardiovascular endurance and core strength.",
+        "difficulty": "Intermediate",
+        "sets": 3,
+        "reps": "30-40",
+        "duration": "12 min",
+        "calories": "130 kcal",
+        "rating": 4.8,
+        "instructions": [
+            "Start in a high plank position.",
+            "Keep your shoulders above your wrists.",
+            "Drive one knee toward your chest.",
+            "Alternate legs quickly while maintaining a stable plank."
+        ]
+    },
+    {
+        "exerciseId": 12,
+        "exerciseName": "Dumbbell Row",
+        "image": "https://images.pexels.com/photos/4162487/pexels-photo-4162487.jpeg",
+        "tags": [
+            "Back",
+            "Biceps"
+        ],
+        "equipment": "Dumbbell, Bench",
+        "description": "A unilateral pulling exercise that strengthens the lats, upper back, and biceps.",
+        "difficulty": "Intermediate",
+        "sets": 3,
+        "reps": "10-12",
+        "duration": "18 min",
+        "calories": "110 kcal",
+        "rating": 4.7,
+        "instructions": [
+            "Place one hand and knee on a bench.",
+            "Hold a dumbbell with your opposite hand.",
+            "Pull the dumbbell toward your hip.",
+            "Lower it slowly and repeat."
+        ]
+    },
+    {
+        "exerciseId": 13,
+        "exerciseName": "Jump Squat",
+        "image": "https://images.pexels.com/photos/4162487/pexels-photo-4162487.jpeg",
+        "tags": [
+            "Legs",
+            "Cardio"
+        ],
+        "equipment": "Bodyweight",
+        "description": "An explosive lower-body exercise that develops leg power and cardiovascular fitness.",
+        "difficulty": "Intermediate",
+        "sets": 3,
+        "reps": "12-15",
+        "duration": "12 min",
+        "calories": "140 kcal",
+        "rating": 4.6,
+        "instructions": [
+            "Stand with feet shoulder-width apart.",
+            "Lower into a comfortable squat position.",
+            "Jump upward explosively.",
+            "Land softly and return directly into the next squat."
+        ]
+    },
+    {
+        "exerciseId": 14,
+        "exerciseName": "Tricep Dips",
+        "image": "https://images.pexels.com/photos/4162487/pexels-photo-4162487.jpeg",
+        "tags": [
+            "Arms",
+            "Triceps"
+        ],
+        "equipment": "Dip Bars",
+        "description": "A bodyweight exercise that targets the triceps and improves upper-body pushing strength.",
+        "difficulty": "Intermediate",
+        "sets": 3,
+        "reps": "10-12",
+        "duration": "15 min",
+        "calories": "90 kcal",
+        "rating": 4.6,
+        "instructions": [
+            "Hold the parallel bars with your arms extended.",
+            "Keep your chest lifted and shoulders stable.",
+            "Bend your elbows to lower your body.",
+            "Push back up to the starting position."
+        ]
+    },
+    {
+        "exerciseId": 15,
+        "exerciseName": "Bicycle Crunch",
+        "image": "https://images.pexels.com/photos/4162487/pexels-photo-4162487.jpeg",
+        "tags": [
+            "Abs",
+            "Core"
+        ],
+        "equipment": "Exercise Mat",
+        "description": "A core-focused exercise that targets the abdominal muscles and obliques.",
+        "difficulty": "Beginner",
+        "sets": 3,
+        "reps": "20-24",
+        "duration": "12 min",
+        "calories": "75 kcal",
+        "rating": 4.7,
+        "instructions": [
+            "Lie on your back with your hands behind your head.",
+            "Lift your shoulders and bend both knees.",
+            "Bring one elbow toward the opposite knee.",
+            "Alternate sides in a controlled cycling motion."
+        ]
+    },
+    {
+        "exerciseId": 16,
+        "exerciseName": "Leg Press",
+        "image": "https://images.pexels.com/photos/4162487/pexels-photo-4162487.jpeg",
+        "tags": [
+            "Legs",
+            "Quads"
+        ],
+        "equipment": "Leg Press Machine",
+        "description": "A machine-based lower-body exercise that strengthens the quadriceps, glutes, and hamstrings.",
+        "difficulty": "Beginner",
+        "sets": 4,
+        "reps": "10-12",
+        "duration": "20 min",
+        "calories": "160 kcal",
+        "rating": 4.8,
+        "instructions": [
+            "Sit comfortably on the machine with your back supported.",
+            "Place your feet shoulder-width apart on the platform.",
+            "Lower the platform with controlled knee bending.",
+            "Push the platform away without locking your knees."
+        ]
+    },
+    {
+        "exerciseId": 17,
+        "exerciseName": "Incline Push-Up",
+        "image": "https://images.pexels.com/photos/4162487/pexels-photo-4162487.jpeg",
+        "tags": [
+            "Chest",
+            "Arms"
+        ],
+        "equipment": "Bench",
+        "description": "A beginner-friendly push-up variation that builds chest and triceps strength with reduced resistance.",
+        "difficulty": "Beginner",
+        "sets": 3,
+        "reps": "12-15",
+        "duration": "12 min",
+        "calories": "70 kcal",
+        "rating": 4.6,
+        "instructions": [
+            "Place your hands on a stable elevated surface.",
+            "Walk your feet backward into a straight-body position.",
+            "Lower your chest toward the surface.",
+            "Push back to the starting position."
+        ]
+    },
+    {
+        "exerciseId": 18,
+        "exerciseName": "Glute Bridge",
+        "image": "https://images.pexels.com/photos/4162487/pexels-photo-4162487.jpeg",
+        "tags": [
+            "Glutes",
+            "Core"
+        ],
+        "equipment": "Exercise Mat",
+        "description": "A floor-based exercise that activates the glutes and strengthens the posterior chain.",
+        "difficulty": "Beginner",
+        "sets": 3,
+        "reps": "15-20",
+        "duration": "12 min",
+        "calories": "65 kcal",
+        "rating": 4.7,
+        "instructions": [
+            "Lie on your back with knees bent and feet flat.",
+            "Keep your arms beside your body.",
+            "Squeeze your glutes and lift your hips.",
+            "Lower your hips slowly to the floor."
+        ]
+    },
+    {
+        "exerciseId": 19,
+        "exerciseName": "Arnold Press",
+        "image": "https://images.pexels.com/photos/4162487/pexels-photo-4162487.jpeg",
+        "tags": [
+            "Shoulders",
+            "Arms"
+        ],
+        "equipment": "Dumbbells",
+        "description": "A rotational shoulder press that targets multiple deltoid regions and develops shoulder strength.",
+        "difficulty": "Intermediate",
+        "sets": 3,
+        "reps": "10-12",
+        "duration": "18 min",
+        "calories": "120 kcal",
+        "rating": 4.8,
+        "instructions": [
+            "Hold dumbbells in front of your shoulders with palms facing you.",
+            "Rotate your palms outward while pressing overhead.",
+            "Extend your arms without arching your back.",
+            "Reverse the movement slowly to return."
+        ]
+    },
+    {
+        "exerciseId": 20,
+        "exerciseName": "Burpees",
+        "image": "https://images.pexels.com/photos/4162487/pexels-photo-4162487.jpeg",
+        "tags": [
+            "Full Body",
+            "Cardio"
+        ],
+        "equipment": "Bodyweight",
+        "description": "A full-body conditioning exercise combining a squat, plank, push-up, and explosive jump.",
+        "difficulty": "Advanced",
+        "sets": 3,
+        "reps": "10-12",
+        "duration": "15 min",
+        "calories": "180 kcal",
+        "rating": 4.9,
+        "instructions": [
+            "Start standing with your feet shoulder-width apart.",
+            "Squat down and place your hands on the floor.",
+            "Jump your feet back into a plank position.",
+            "Return your feet forward and jump upward."
+        ]
+    }
+]

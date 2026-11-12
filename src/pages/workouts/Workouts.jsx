@@ -1,5 +1,6 @@
 import React from 'react';
 import Banner from '../../components/banner/Banner';
+import Exercises from '../../components/exercises/Exercises';
 
 const Workouts = () => {
     return (
@@ -7,6 +8,7 @@ const Workouts = () => {
 
 
             <Banner></Banner>
+            <Exercises></Exercises>
 
 
         </>
