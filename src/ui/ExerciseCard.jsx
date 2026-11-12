@@ -8,7 +8,7 @@ const ExerciseCard = ({ exercise }) => {
         >
 
             {/* Card Image */}
-            <div className="h-[185px] sm:h-[145px] md:h-[155px] lg:h-[135px] overflow-hidden bg-[#1B1E24]">
+            <div className="h-[185px] sm:h-[150px] md:h-[160px] lg:h-[170px] overflow-hidden bg-[#1B1E24]">
 
                 <img
                     src={exercise.image}
