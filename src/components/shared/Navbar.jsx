@@ -23,7 +23,7 @@ const Navbar = () => {
 
         <header className="sticky top-0 z-50  bg-[#0B0D10] border-b border-white/10">
 
-            <nav className="relative mx-auto flex min-h-[64px] lg:min-h-[68px] w-[94%] items-center justify-between md:w-[90%] lg:w-[85%]">
+            <nav className="relative mx-auto flex min-h-[68px] lg:min-h-[72px] w-[94%] items-center justify-between md:w-[90%] lg:w-[85%]">
 
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2">
@@ -32,7 +32,7 @@ const Navbar = () => {
                         alt="FITLOG Logo"
                         className="w-7"
                     />
-                    <h2 className="lg:text-[18px] text-[16px] font-extrabold tracking-wide text-white">
+                    <h2 className="lg:text-[20px] text-[19px] font-extrabold tracking-wide text-white">
                         FITLOG
                     </h2>
                 </Link>
@@ -57,20 +57,20 @@ const Navbar = () => {
 
                     {/* Plan */}
                     <div className="flex items-center gap-1.5">
-                        <span className="text-[12px] text-gray-300">
+                        <span className="text-[13px] text-gray-300">
                             Plan
                         </span>
-                        <span className="flex h-4 w-4 items-center justify-center rounded-full bg-[#C6FF00] text-[9px] font-bold text-black">
+                        <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#C6FF00] text-[10px] font-bold text-black">
                             0
                         </span>
                     </div>
 
                     {/* Saved */}
                     <div className="flex items-center gap-1.5">
-                        <span className="text-[12px] text-gray-400">
+                        <span className="text-[13px] text-gray-400">
                             Saved
                         </span>
-                        <span className="flex h-4 w-4 items-center justify-center rounded-full border border-gray-700 text-[9px] text-gray-300">
+                        <span className="flex h-5 w-5 items-center justify-center rounded-full border border-gray-700 text-[10px] text-gray-300">
                             0
                         </span>
                     </div>

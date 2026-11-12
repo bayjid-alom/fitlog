@@ -1,14 +1,17 @@
 import React from 'react';
 import { FiActivity, FiClock, FiStar } from 'react-icons/fi';
+import { Link } from 'react-router';
+
 
 const ExerciseCard = ({ exercise }) => {
+
     return (
-        <div
+        <Link to={`/${exercise.exerciseId}`}
             className="group bg-[#15171C] border border-[#252830] rounded-xl overflow-hidden transition-all duration-300 ease-out hover:border-[#B9F500]/50 hover:-translate-y-1 hover:shadow-[0_8px_25px_rgba(0,0,0,0.25)]"
         >
 
             {/* Card Image */}
-            <div className="h-[185px] sm:h-[150px] md:h-[160px] lg:h-[170px] overflow-hidden bg-[#1B1E24]">
+            <div className="h-[220px]  md:h-[160px] lg:h-[170px] overflow-hidden bg-[#1B1E24]">
 
                 <img
                     src={exercise.image}
@@ -80,7 +83,7 @@ const ExerciseCard = ({ exercise }) => {
 
             </div>
 
-        </div>
+        </Link>
     );
 };
 

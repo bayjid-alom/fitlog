@@ -3,6 +3,7 @@ import RootLayout from "../layout/RootLayout";
 import Workouts from "../pages/workouts/Workouts";
 import MyPlans from "../pages/myPlans/MyPlans";
 import ErrorMessage from "../pages/errorMessage/ErrorMessage";
+import ExerciseDetails from "../pages/exerciseDetails/ExerciseDetails";
 
 export const router = createBrowserRouter([
     {
@@ -16,6 +17,10 @@ export const router = createBrowserRouter([
             {
                 path: "/my-plans",
                 Component: MyPlans
+            },
+            {
+                path: "/:theId",
+                Component: ExerciseDetails
             }
         ],
         errorElement: <ErrorMessage></ErrorMessage>
