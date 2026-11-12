@@ -3,9 +3,9 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-body{
+body {
   font-family: "Oswald", sans-serif;
   font-optical-sizing: auto;
-  font-weight:400;
+  font-weight: 400;
   font-style: normal;
 }

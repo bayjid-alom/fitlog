@@ -1,11 +1,15 @@
 import React from 'react';
+import Banner from '../../components/banner/Banner';
 
 const Workouts = () => {
     return (
-        <div>
-            this is workouts from hompage.
-            
-        </div>
+        <>
+
+
+            <Banner></Banner>
+
+
+        </>
     );
 };
 

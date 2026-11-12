@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router";
 import RootLayout from "../layout/RootLayout";
 import Workouts from "../pages/workouts/Workouts";
 import MyPlans from "../pages/myPlans/MyPlans";
+import ErrorMessage from "../pages/errorMessage/ErrorMessage";
 
 export const router = createBrowserRouter([
     {
@@ -16,7 +17,9 @@ export const router = createBrowserRouter([
                 path: "/my-plans",
                 Component: MyPlans
             }
-        ]
+        ],
+        errorElement: <ErrorMessage></ErrorMessage>
     },
+
 
 ]);
