@@ -1,13 +1,17 @@
 
-import React from 'react';
+import React, { useContext } from 'react';
 import { useParams } from 'react-router';
 import useExercises from '../../hooks/useExercises';
 import { BeatLoader } from 'react-spinners';
 import { FaStar, FaBookmark, FaCalendarCheck } from 'react-icons/fa';
+import { ExerciseContext } from '../../context/ExerciseProvider';
 
 
 
 const ExerciseDetails = () => {
+
+    const { handleAddToMyPlan } = useContext(ExerciseContext);
+
     const { theId } = useParams();
     const { exercises, loading } = useExercises();
 
@@ -158,6 +162,7 @@ const ExerciseDetails = () => {
                         <div className="flex flex-wrap gap-3 mt-7">
 
                             <button
+                                onClick={() => handleAddToMyPlan(expectedExercise)}
                                 type="button"
                                 className="flex items-center gap-2 bg-[#B9F500] hover:bg-[#a8df00] active:scale-95 text-black text-xs font-semibold px-4 py-3 rounded-lg transition-all duration-200 ease-in-out cursor-pointer"
                             >

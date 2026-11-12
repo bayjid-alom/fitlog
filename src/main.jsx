@@ -4,6 +4,8 @@ import './index.css'
 
 import { RouterProvider } from 'react-router/dom';
 import { router } from './router/Router';
+import ExerciseProvider from './context/ExerciseProvider';
+import { ToastContainer } from 'react-toastify';
 
 
 
@@ -11,6 +13,10 @@ import { router } from './router/Router';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}></RouterProvider>
+    <ExerciseProvider>
+
+      <RouterProvider router={router}></RouterProvider>
+      <ToastContainer></ToastContainer>
+    </ExerciseProvider>
   </StrictMode>,
 )
