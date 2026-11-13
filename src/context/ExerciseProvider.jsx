@@ -13,12 +13,12 @@ const ExerciseProvider = ({ children }) => {
         const isExistInPlan = myPlans.find(c => c.exerciseId == currentExercise.exerciseId)
 
         if (isExistInPlan) {
-            toast.warning(`${currentExercise.exerciseName} is already exist.`);
-            return
+            toast.warning(`${currentExercise.exerciseName} is already in your plan.`);
+            return;
         }
         else {
             setMyPlans([...myPlans, currentExercise]);
-            toast.success(`${currentExercise.exerciseName} is added to  my plan.`);
+            toast.success(`${currentExercise.exerciseName} added to your plan.`);
         }
     }
 

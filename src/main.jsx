@@ -16,7 +16,22 @@ createRoot(document.getElementById('root')).render(
     <ExerciseProvider>
 
       <RouterProvider router={router}></RouterProvider>
-      <ToastContainer></ToastContainer>
+      <ToastContainer
+        position="top-right"
+        autoClose={2500}
+        theme="dark"
+        toastStyle={{
+          background: '#15181F',
+          color: '#F3F4F6',
+          border: '1px solid #292D35',
+          borderRadius: '12px',
+          fontSize: '14px',
+          fontWeight: '500',
+        }}
+        progressStyle={{
+          background: '#C6FF00',
+        }}
+      />
     </ExerciseProvider>
   </StrictMode>,
 )

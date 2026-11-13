@@ -1,17 +1,19 @@
 import React, { useContext, useState } from 'react';
 import { Link } from 'react-router';
 import { ExerciseContext } from '../../context/ExerciseProvider';
+import TodaysPlan from './TodaysPlan';
+import Saved from './Saved';
 
 
 const MyPlans = () => {
 
     const { myPlans } = useContext(ExerciseContext);
     const [tabActive, setTabActive] = useState("plans")
-    console.log(tabActive, "clicked");
 
 
 
     return (
+
         <section className="min-h-screen bg-[#0B0D10] py-6 md:py-8 lg:py-10">
             <div className="w-[94%] md:w-[90%] lg:w-[85%] mx-auto">
 
@@ -25,7 +27,6 @@ const MyPlans = () => {
                     <p className="text-gray-500 text-xs md:text-sm">
                         Cap of five lifts for today. Finish them, then load more.
                     </p>
-
                 </div>
 
 
@@ -122,8 +123,9 @@ const MyPlans = () => {
                             <option value="calories">Calories</option>
                             <option value="rating">Rating</option>
                         </select>
-
                     </div>
+
+
 
                 </div>
 
@@ -131,28 +133,18 @@ const MyPlans = () => {
 
 
 
-                {/* Empty State */}
+
                 {
-                    myPlans.length == 0 && <div className="min-h-[250px] md:min-h-[300px] border border-dashed border-[#252933] rounded-xl flex flex-col justify-center items-center text-center px-5 py-10">
 
-                        <h3 className="text-white text-lg md:text-xl font-extrabold tracking-wide mb-2">
-                            NOTHING HERE YET
-                        </h3>
+                    tabActive === "plans" ? <TodaysPlan /> : <Saved />
 
-                        <p className="text-gray-400 text-xs md:text-sm mb-6">
-                            Browse the library and add a lift to get today moving.
-                        </p>
-
-                        <Link
-                            to="/"
-                            type="button"
-                            className="bg-[#B9F500] hover:bg-[#a8df00] active:scale-95 text-black text-xs font-semibold px-6 py-3 rounded-full transition-all duration-200 cursor-pointer"
-                        >
-                            Go to workouts
-                        </Link>
-
-                    </div>
                 }
+
+
+
+
+
+
 
 
 
