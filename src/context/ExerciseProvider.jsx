@@ -1,12 +1,17 @@
 import React, { createContext, useState } from 'react';
 import { toast } from 'react-toastify';
+import { addWorkoutPlanToLocalDB, getAllWorkoutPlansFromLocalDB } from '../utils/plans-to-localDB';
+import { addSavedExerciseToLocalDB, getAllSavedExercisesFromLocalDB } from '../utils/saved-to-localDB';
 
 
 export const ExerciseContext = createContext()
 
 const ExerciseProvider = ({ children }) => {
-    const [myPlans, setMyPlans] = useState([])
-    const [saved, setSaved] = useState([])
+
+    // const [myPlans, setMyPlans] = useState([])
+    const [myPlans, setMyPlans] = useState(() => getAllWorkoutPlansFromLocalDB())
+    // const [saved, setSaved] = useState([])
+    const [saved, setSaved] = useState(() => getAllSavedExercisesFromLocalDB())
 
     // Sorting state declare
     const [sortingType, setSortingType] = useState("Default")
@@ -14,6 +19,9 @@ const ExerciseProvider = ({ children }) => {
 
 
     const handleAddToMyPlan = (currentExercise) => {
+        // to add local storage
+        addWorkoutPlanToLocalDB(currentExercise)
+
         const isExistInPlan = myPlans.find(c => c.exerciseId == currentExercise.exerciseId)
 
         if (isExistInPlan) {
@@ -30,6 +38,8 @@ const ExerciseProvider = ({ children }) => {
 
 
     const handleSaveForLater = (currentExercise) => {
+        // to add local storage
+        addSavedExerciseToLocalDB(currentExercise)
 
         const isExistInPlan = myPlans.find(c => c.exerciseId == currentExercise.exerciseId);
 
