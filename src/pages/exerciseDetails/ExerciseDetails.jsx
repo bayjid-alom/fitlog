@@ -10,7 +10,7 @@ import { ExerciseContext } from '../../context/ExerciseProvider';
 
 const ExerciseDetails = () => {
 
-    const { handleAddToMyPlan } = useContext(ExerciseContext);
+    const { handleAddToMyPlan, handleSaveForLater } = useContext(ExerciseContext);
 
     const { theId } = useParams();
     const { exercises, loading } = useExercises();
@@ -171,6 +171,7 @@ const ExerciseDetails = () => {
                             </button>
 
                             <button
+                                onClick={() => handleSaveForLater(expectedExercise)}
                                 type="button"
                                 className="flex items-center gap-2 border border-[#30343D] hover:border-[#B9F500] hover:bg-[#B9F500]/10 active:scale-95  text-gray-300 text-xs font-medium px-4 py-3 rounded-lg transition-all duration-200 ease-in-out cursor-pointer"
                             >

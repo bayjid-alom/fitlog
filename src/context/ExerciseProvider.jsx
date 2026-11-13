@@ -6,6 +6,7 @@ export const ExerciseContext = createContext()
 
 const ExerciseProvider = ({ children }) => {
     const [myPlans, setMyPlans] = useState([])
+    const [saved, setSaved] = useState([])
 
 
 
@@ -24,10 +25,48 @@ const ExerciseProvider = ({ children }) => {
 
 
 
+
+    const handleSaveForLater = (currentExercise) => {
+
+        const isExistInPlan = myPlans.find(c => c.exerciseId == currentExercise.exerciseId);
+
+        if (isExistInPlan) {
+            toast.warning("Already added to your workout plan.", {
+                position: "top-right",
+                theme: "dark",
+            });
+            return;
+        }
+
+        const isExistInSaved = saved.find(c => c.exerciseId == currentExercise.exerciseId);
+
+        if (isExistInSaved) {
+            toast.warning(`${currentExercise.exerciseName} is already in your saved list.`, {
+                position: "top-right",
+                theme: "dark",
+            });
+            return;
+        }
+
+        setSaved([...saved, currentExercise]);
+
+        toast.success(`${currentExercise.exerciseName} saved for later!`, {
+            position: "top-right",
+            theme: "dark",
+        });
+    };
+
+
+
+
+
     const data = {
         handleAddToMyPlan,
         myPlans,
-        setMyPlans
+        setMyPlans,
+        saved,
+        setSaved,
+        handleSaveForLater
     }
 
 
