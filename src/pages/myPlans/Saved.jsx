@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { ExerciseContext } from '../../context/ExerciseProvider';
 import {
     FiClock,
@@ -12,7 +12,7 @@ import { toast } from 'react-toastify';
 
 
 
-const Saved = () => {
+const Saved = ({ sortingType }) => {
 
     const { saved, setSaved } = useContext(ExerciseContext);
 
@@ -20,7 +20,34 @@ const Saved = () => {
     const handleRemove = (plan) => {
         const filteredArray = saved.filter(i => i.exerciseId !== plan.exerciseId);
         setSaved(filteredArray);
-    }
+        toast.success(`${plan.exerciseName} removed from saved list.`);
+    };
+
+
+
+    const [filteredForSort, setFilteredForSort] = useState(saved);
+    useEffect(() => {
+
+        if (sortingType) {
+            if (sortingType === "duration") {
+                const sortedData = [...saved].sort((a, b) => a.duration - b.duration);
+                setFilteredForSort(sortedData);
+            }
+            else if (sortingType === "calories") {
+                const sortedData = [...saved].sort((a, b) => a.calories - b.calories);
+                setFilteredForSort(sortedData);
+            }
+            if (sortingType === "name") {
+                const sortedData = [...saved].sort((a, b) => a.exerciseName.localeCompare(b.exerciseName));
+                setFilteredForSort(sortedData);
+            }
+            if (sortingType === "rating") {
+                const sortedData = [...saved].sort((a, b) => a.rating - b.rating);
+                setFilteredForSort(sortedData);
+            }
+        }
+
+    }, [sortingType, saved])
 
 
 
@@ -60,7 +87,8 @@ const Saved = () => {
 
                     {
                         saved.length > 0 &&
-                        saved.map(plan => (
+                        // saved.map(plan => (
+                        filteredForSort.map(plan => (
 
                             <div
                                 key={plan.exerciseId}
@@ -91,12 +119,12 @@ const Saved = () => {
 
                                             <span className="flex items-center gap-1">
                                                 <FiClock className="text-lime-400" />
-                                                {plan.duration}
+                                                {plan.duration} min
                                             </span>
 
                                             <span className="flex items-center gap-1">
                                                 <FiZap className="text-lime-400" />
-                                                {plan.calories}
+                                                {plan.calories} kcal
                                             </span>
 
                                             <span className="flex items-center gap-1">

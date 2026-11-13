@@ -7,9 +7,8 @@ import Saved from './Saved';
 
 const MyPlans = () => {
 
-    const { myPlans } = useContext(ExerciseContext);
+    const { myPlans, sortingType, setSortingType } = useContext(ExerciseContext);
     const [tabActive, setTabActive] = useState("plans")
-
 
 
     return (
@@ -115,9 +114,11 @@ const MyPlans = () => {
                         </span>
 
                         <select
-                            defaultValue="duration"
+                            value={sortingType}
+                            onChange={(e) => setSortingType(e.target.value)}
                             className="bg-[#171A22] border border-[#252933] text-gray-300 text-xs rounded-lg px-3 py-2 outline-none cursor-pointer"
                         >
+                            <option value="Default">Default</option>
                             <option value="duration">Duration</option>
                             <option value="name">Name</option>
                             <option value="calories">Calories</option>
@@ -136,7 +137,9 @@ const MyPlans = () => {
 
                 {
 
-                    tabActive === "plans" ? <TodaysPlan /> : <Saved />
+                    tabActive === "plans"
+                        ? <TodaysPlan sortingType={sortingType} />
+                        : <Saved sortingType={sortingType} />
 
                 }
 

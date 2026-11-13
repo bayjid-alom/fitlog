@@ -8,6 +8,9 @@ const ExerciseProvider = ({ children }) => {
     const [myPlans, setMyPlans] = useState([])
     const [saved, setSaved] = useState([])
 
+    // Sorting state declare
+    const [sortingType, setSortingType] = useState("Default")
+
 
 
     const handleAddToMyPlan = (currentExercise) => {
@@ -66,7 +69,9 @@ const ExerciseProvider = ({ children }) => {
         setMyPlans,
         saved,
         setSaved,
-        handleSaveForLater
+        handleSaveForLater,
+        sortingType,
+        setSortingType
     }
 
 

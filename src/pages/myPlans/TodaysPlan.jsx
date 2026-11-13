@@ -1,5 +1,5 @@
 
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { ExerciseContext } from '../../context/ExerciseProvider';
 import {
     FiClock,
@@ -10,9 +10,34 @@ import {
 } from 'react-icons/fi';
 import { Link } from 'react-router';
 
-const TodaysPlan = () => {
+const TodaysPlan = ({ sortingType }) => {
 
     const { myPlans } = useContext(ExerciseContext);
+
+
+    const [filteredForSort, setFilteredForSort] = useState(myPlans);
+    useEffect(() => {
+
+        if (sortingType) {
+            if (sortingType === "duration") {
+                const sortedData = [...myPlans].sort((a, b) => a.duration - b.duration);
+                setFilteredForSort(sortedData);
+            }
+            else if (sortingType === "calories") {
+                const sortedData = [...myPlans].sort((a, b) => a.calories - b.calories);
+                setFilteredForSort(sortedData);
+            }
+            if (sortingType === "name") {
+                const sortedData = [...myPlans].sort((a, b) => a.exerciseName.localeCompare(b.exerciseName));
+                setFilteredForSort(sortedData);
+            }
+            if (sortingType === "rating") {
+                const sortedData = [...myPlans].sort((a, b) => a.rating - b.rating);
+                setFilteredForSort(sortedData);
+            }
+        }
+
+    }, [sortingType, myPlans])
 
 
     return (
@@ -61,7 +86,8 @@ const TodaysPlan = () => {
                     {
                         myPlans.length > 0 &&
 
-                        myPlans.map(plan => (
+                        // myPlans.map(plan => (
+                        filteredForSort.map(plan => (
 
                             <div
                                 key={plan.exerciseId}
@@ -92,12 +118,12 @@ const TodaysPlan = () => {
 
                                             <span className="flex items-center gap-1">
                                                 <FiClock className="text-lime-400" />
-                                                {plan.duration}
+                                                {plan.duration} min
                                             </span>
 
                                             <span className="flex items-center gap-1">
                                                 <FiZap className="text-lime-400" />
-                                                {plan.calories}
+                                                {plan.calories} kcal
                                             </span>
 
                                             <span className="flex items-center gap-1">

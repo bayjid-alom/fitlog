@@ -61,13 +61,13 @@ const ExerciseCard = ({ exercise }) => {
                     {/* Duration */}
                     <span className="flex items-center gap-1.5">
                         <FiClock size={12} />
-                        {exercise.duration}
+                        {exercise.duration} min
                     </span>
 
                     {/* Calories */}
                     <span className="flex items-center gap-1.5">
                         <FiActivity size={12} />
-                        {exercise.calories}
+                        {exercise.calories} kcal
                     </span>
 
                     {/* Rating */}

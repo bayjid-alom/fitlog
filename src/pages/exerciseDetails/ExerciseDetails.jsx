@@ -116,12 +116,12 @@ const ExerciseDetails = () => {
 
                             <div className="flex justify-between items-center px-4 py-3 border-b border-[#252933]">
                                 <span className="text-gray-400 text-[11px] font-semibold uppercase">Duration</span>
-                                <span className="text-gray-200 text-xs">{duration}</span>
+                                <span className="text-gray-200 text-xs">{duration} min</span>
                             </div>
 
                             <div className="flex justify-between items-center px-4 py-3 border-b border-[#252933]">
                                 <span className="text-gray-400 text-[11px] font-semibold uppercase">Calories</span>
-                                <span className="text-gray-200 text-xs">{calories}</span>
+                                <span className="text-gray-200 text-xs">{calories} kcal</span>
                             </div>
 
                             <div className="flex justify-between items-center px-4 py-3">
