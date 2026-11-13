@@ -1,5 +1,4 @@
-
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { ExerciseContext } from '../../context/ExerciseProvider';
 import {
     FiClock,
@@ -9,10 +8,22 @@ import {
     FiX
 } from 'react-icons/fi';
 import { Link } from 'react-router';
+import { toast } from 'react-toastify';
+
+
 
 const Saved = () => {
 
-    const { saved } = useContext(ExerciseContext);
+    const { saved, setSaved } = useContext(ExerciseContext);
+
+
+    const handleRemove = (plan) => {
+        const filteredArray = saved.filter(i => i.exerciseId !== plan.exerciseId);
+        setSaved(filteredArray);
+    }
+
+
+
 
     return (
         <section className="bg-[#0B0D10] py-6 md:py-8 lg:py-10">
@@ -44,9 +55,8 @@ const Saved = () => {
                 }
 
                 {/* Saved Container */}
-                <div className={`space-y-3 rounded-xl p-2 md:p-3 ${
-                    saved.length > 0 ? 'border-dotted border-cyan-500' : ''
-                }`}>
+                <div className={`space-y-3 rounded-xl p-2 md:p-3 ${saved.length > 0 ? 'border-dotted border-cyan-500' : ''
+                    }`}>
 
                     {
                         saved.length > 0 &&
@@ -100,6 +110,8 @@ const Saved = () => {
 
                                 </div>
 
+
+
                                 {/* Action Buttons */}
                                 <div className="flex items-center gap-2 sm:justify-end md:gap-3">
 
@@ -112,8 +124,10 @@ const Saved = () => {
                                         View Details
                                     </Link>
 
+
                                     {/* Remove Button */}
                                     <button
+                                        onClick={() => handleRemove(plan)}
                                         type="button"
                                         className="flex items-center justify-center rounded-full border border-[#353B46] p-2.5 text-gray-300 transition hover:border-gray-400 hover:bg-[#252A33]"
                                     >

@@ -11,13 +11,13 @@ const useExercises = () => {
             const res = await fetch("/exercise-data.json");
             const data = await res.json();
 
-            setTimeout(() => {
-                setExercises(data);
-                setLoading(false);
-            }, 1500)
+            // setTimeout(() => {
+            //     setExercises(data);
+            //     setLoading(false);
+            // }, 1500)
 
-            // setExercises(data);
-            // setLoading(false);
+            setExercises(data);
+            setLoading(false);
         };
 
         fetchData();

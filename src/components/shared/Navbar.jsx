@@ -1,11 +1,14 @@
 
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import logo from "../../assets/images/logo.png";
 import { Menu, X } from 'lucide-react';
 import MyNavlink from './MyNavlink';
 import { Link } from 'react-router';
+import { ExerciseContext } from '../../context/ExerciseProvider';
 
 const Navbar = () => {
+
+    const { myPlans, saved } = useContext(ExerciseContext);
 
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -61,7 +64,7 @@ const Navbar = () => {
                             Plan
                         </span>
                         <span className="flex h-5 w-5 items-center justify-center rounded-full bg-[#C6FF00] text-[10px] font-bold text-black">
-                            0
+                            {myPlans.length}
                         </span>
                     </div>
 
@@ -71,7 +74,7 @@ const Navbar = () => {
                             Saved
                         </span>
                         <span className="flex h-5 w-5 items-center justify-center rounded-full border border-gray-700 text-[10px] text-gray-300">
-                            0
+                            {saved.length}
                         </span>
                     </div>
 
